@@ -1,11 +1,11 @@
 * {
   margin: 0;
   font-family: sans-serif;
-  word-spacing: 0.5rem;
+  word-spacing: 0.25rem;
 }
 
 body {
-  background-color: black;
+  background-color: rgb(28, 27, 27);
   width: 100%;
   height: 100%;
 }
@@ -13,7 +13,6 @@ body {
 header {
   display: flex;
   width: 100%;
-
   height: 4rem;
 }
 
@@ -21,7 +20,6 @@ nav {
   display: flex;
   align-items: center;
   color: white;
-  background-color: black;
   width: 100%;
   font-weight: bold;
   gap: 4rem;
@@ -43,18 +41,21 @@ h1 {
   color: red;
 }
 
-.menu-container {
-  flex: 6;
+h1.logo a {
+  color: red;
 }
 
-.menu-list {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
   display: flex;
-  list-style: none;
-  gap: 4rem;
 }
 
-.menu-list-item {
-  margin-right: 30px;
+nav a {
+  color: white;
 }
 
 .profile-container {
@@ -84,7 +85,6 @@ main {
 
 .sidebar {
   height: 100%;
-  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +140,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
   height: 300px;
   transform: translateX(0);
@@ -162,7 +162,7 @@ main {
 .movie-list-item-img:hover {
   transform: scale(1.4);
   margin: 1rem;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .movie-list-item-img {
@@ -186,6 +186,12 @@ main {
   width: 300px;
 }
 
+.movie-list-item-lang {
+  color: darkorange;
+  text-align: justify;
+  transition: 1s all ease-in-out;
+}
+
 .movie-list-item-button {
   background-color: greenyellow;
   color: black;
@@ -196,4 +202,14 @@ main {
   border: none;
   cursor: pointer;
   transition: 1s all ease-in-out;
+  font-size: large;
+}
+
+.embed-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1rem solid white;
 }
