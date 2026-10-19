@@ -154,7 +154,6 @@ main {
 .movie-list-item {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   align-items: center;
 }
 
@@ -186,6 +185,12 @@ main {
 
 .movie-list-item-lang {
   color: darkorange;
+  text-align: justify;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-quality {
+  color: white;
   text-align: justify;
   transition: 1s all ease-in-out;
 }
